@@ -1,0 +1,555 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+section#header .top-header{
+    width: 100%;
+    float: left;
+    background: #161616;
+}
+section#header .top-header .logo img{
+    width: 80px;
+    padding: 10px 0;
+}
+section#header .top-header .top-ads img{
+    padding: 10px 0;
+}
+
+/* Start Menu */
+section#header .menu{
+    width: 100%;
+    background: #fa1939;
+    float: left;
+    height: 50px;
+}
+section#header .menu ul{
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+}
+section#header .menu ul li{
+    float: left;
+    list-style: none;
+    padding: 0 5px;
+}
+section#header .menu ul li a{
+    text-decoration: none;
+    color: #ffffffcc;
+    display: block;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-family: Koulen;
+}
+section#header .menu ul li a:hover{
+    color: #fff;
+}
+section#header .menu ul li a img{
+    width: 70px;
+}
+section#header .fa-home{
+    display: inline-block;
+    padding-top: 6px;
+    color: #fff;
+}
+section#header .active{
+    background: #D90C16;
+    height: 50px;
+}
+/* Start Content */
+section#content .news-side{
+    width: calc(100% - 308px);
+    float: left;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+section#content .news-side .news-left{
+    width: calc(100% - 350px);
+    background: red;
+    height: 250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+/* News Body*/
+section#content .news-left .news-body{
+    width: 100%;
+    height: 250px;
+}
+section#content .news-body .img-news{
+    position: relative;
+}
+section#content .news-body .img-news img{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+}
+
+/* Label */
+section#content .news-body .label{
+    display: inline-block;
+    position: absolute;
+    z-index: 9999;
+    margin-top: 10px;
+}
+section#content .news-body .label span{
+    padding: 0 15px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Koulen;
+    float: left;
+    line-height: 30px;
+}
+/*Cover */
+section#content .news-body .cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,.3) 0,rgba(0,0,0,.8) 60%,#000 100%);
+    opacity: 0.4;
+}
+/* News Caption */
+section#content .news-body .news-caption{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    float: left;
+    bottom: -75px;
+    transition: all ease-in-out 0.5s;
+
+}
+section#content .news-body .news-caption:hover{
+    bottom: 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,.0) 0,rgba(0,0,0,.8) 60%,#000 100%);
+}
+section#content .news-body .news-caption:hover h4{
+    color: red;
+}
+section#content .news-caption h4, h6{
+    font-family: Battambang, cursive;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+section#content .news-caption h4{
+    font-size: 18px;
+}
+
+/* Background Color */
+.bg-red{
+    background: #F2272F;
+}
+.bg-blue{
+    background: #4390F8;
+}
+.bg-yellow{
+    background: #F9A62B;
+}
+.bg-pink{
+    background: #FA5480;
+}
+.bg-green{
+    background: #38C378;
+}
+/* Label Conner */
+section#content .news-body .label .conner-red{
+    border-left: 20px solid #fa1939;
+    border-top: 30px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    display: inline-block
+}
+section#content .news-body .label .conner-blue{
+    border-left: 20px solid #4390F8;
+    border-top: 30px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    display: inline-block
+}
+section#content .news-body .label .conner-yellow{
+    border-left: 20px solid #F9A62B;
+    border-top: 30px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    display: inline-block
+}
+section#content .news-body .label .conner-pink{
+    border-left: 20px solid #FA5480;
+    border-top: 30px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    display: inline-block
+}
+section#content .news-side .news-right{
+    width: 350px;
+    background: green;
+    height: 250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+/*Advertise */
+section#content .ads-side{
+    width: 300px;
+    float: right;
+    margin: 15px 0;
+}
+section#content .ads-side .box-ads img{
+    width: 100%;
+    height: 247px;
+}
+/* Videos News */
+section#content .category{
+    float: left;
+    padding: 0;
+    margin-bottom: -3px;
+    margin-top: 20px;
+}
+section#content .category .tap{
+    float: left;
+}
+section#content .category .tap a{
+    display: inline-block;
+    font-size: 20px;
+    font-family: Koulen;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+/*Tap Conner*/
+section#content .category .tap-conner-red{
+    border-top: 48px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 35px solid #F2272F;
+    float: left;
+}
+section#content .category .tap-conner-blue{
+    border-top: 48px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 35px solid #4390F8;
+    float: left;
+}
+section#content .category .tap-conner-yellow{
+    border-top: 48px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 35px solid #F9A62B;
+    float: left;
+}
+section#content .category .tap-conner-green{
+    border-top: 48px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 35px solid #38C378;
+    float: left;
+}
+section#content .category .tap-conner-pink{
+    border-top: 48px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 35px solid #FA5480;
+    float: left;
+}
+/*box News */
+section#content .box-news{
+    width: 100%;
+    float: left;
+    background: #fff;
+    position: relative;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+}
+/* Border Color */
+section#content .bd-top-red{
+    border-top: 3px solid #F2272F;
+}
+section#content .bd-top-blue{
+    border-top: 3px solid #4390F8;
+}
+section#content .bd-top-yellow{
+    border-top: 3px solid #F9A62B;
+}
+section#content .bd-top-pink{
+    border-top: 3px solid #FA5480;
+}
+section#content .bd-top-green{
+    border-top: 3px solid #38C378;
+}
+section#content .box-news .wrap-news{
+    padding: 15px 20px;
+}
+section#content .wrap-news .big-news{
+    width: 100%;
+    position: relative;
+}
+section#content  .big-news .thumbnail{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+section#content .big-news .thumbnail img{
+    height: 200px;
+    display: block;
+    width: 100%;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+section#content .big-news .news-title{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+section#content .wrap-news a{
+    text-decoration: none;
+}
+section#content .big-news .news-title h3{
+    font-size: 16px;
+    font-family: Battambang, cursive;
+    color: #444;
+    text-align: left;
+    margin-top: -2px;
+}
+
+section#content .box-news .contain-small-news{
+    width: calc(100% - 350px);
+    float: left;
+}
+/* Small News */
+section#content .contain-small-news .small-news{
+    width: 175px;
+    height: 170px;
+    float: left;
+    margin-right: 11px;
+}
+section#content .contain-small-news .small-news img{
+    height: 100%;
+}
+section#content .news-title h5{
+    font-size: 12px;
+    color: #444;
+    font-family: Battambang, cursive;
+    margin-top: -3px;
+}
+/* Contain Ads */
+section#content .box-news .contain-ads{
+    width: 340px;
+    position: relative;
+    float: right;
+}
+section#content .box-news .contain-ads img{
+    width: 100%;
+}
+
+/* Hover on Image */
+section#content .img-hover:hover img{
+    transform: scale(1);
+}
+
+section#content .news-title h2{
+    font-size: 22px;
+    font-family: Battambang, cursive;
+    color: #fff;
+    padding: 15px 15px;
+    line-height: 36px;
+    margin-top: -10px;
+
+}
+/* Float */
+section#content .float-left{
+    float: left !important;
+}
+section#content .float-right{
+    float: right !important;
+}
+
+/* Footer */
+section#footer {
+    width: 100%;
+    background: black;
+    float: left;
+    margin-top: 100px;
+}
+section#footer .footer-box{
+    width: 100%;
+    margin: 30px 0;
+}
+section#footer .logo-footer img{
+    width: 150px;
+}
+section#footer p,h1{
+    color: #999;
+    font-family: Battambang, cursive;
+}
+section#footer h6.address{
+    font-size: 14px;
+    margin-top: -10px;
+}
+section#footer p.addr{
+    margin-top: -30px;
+    font-size: 15px;
+}
+section#footer h1{
+    font-family: Koulen;
+    font-size: 20px;
+}
+section#footer ul{
+    padding: 0;
+    margin: 0;
+}
+section#footer ul li{
+    list-style: none;
+    float: left;
+    padding: 0 5px;
+}
+section#footer ul li a img{
+    width: 35px;
+}
+section#footer ul .fa{
+    color: #999;
+    font-size: 25px;
+}
+
+/* Komsan News */
+section#content .block-news{
+    width: calc(100% - 340px);
+    float: left;
+    margin: 10px 0;
+}
+section#content .side-bar{
+    width: 320px;
+    float: right;
+    margin: 30px 0;
+}
+.min-width{
+    width: 365px !important;
+}
+.img-size img{
+    width: 250px;
+    height: 150px !important;
+}
+.margin-to{
+    margin-top: 30px;
+}
+section#content .text-title h2{
+    color: #333;
+    font-size: 16px;
+    font-family: Battambang, Arial, Helvetica, sans-serif;
+}
+section#content .text-title span{
+    padding: 0 15px;
+    color: #999;
+    margin-top: -29px;
+    position: absolute;
+    font-size: 14px;
+}
+section#content .date{
+    margin-left: 14px;
+}
+section#content .rule{
+    border-bottom: 1px solid #999;
+    margin-left: 15px;
+}
+section#content .text-title h4{
+    color: #999;
+    padding: 0 15px;
+    font-family: Battambang, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+section#content .ads-sides{
+    width: 100%;
+}
+section#content .ads-sides img{
+    width: 100%;
+}
+section#content .title h2{
+    font-family: Koulen;
+    font-size: 20px;
+    color: #636b6f;
+}
+section#content .border-bottom{
+    border: 2px solid #D90C16;
+    width: 20%;
+    margin-top: -10px;
+}
+section#content .img-side img{
+    width: 45px !important;
+    height: 45px !important;
+}
+section#content .text-side h2{
+    font-size: 14px;
+    font-family: Battambang,Arial, Helvetica, sans-serif;
+    color: #636b6f;
+    float: left;
+    line-height: 20px;
+}
+section#content .detail-title h1{
+    color: #161616;
+    font-size: 22px;
+}
+section#content .rule-detail{
+    border-bottom: 1px solid #999;
+    margin-top: 5px;
+}
+section#content p.text-area{
+    padding: 10px 15px;
+    font-family: Battambang, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+section#content .img-detail{
+    width: 90%;
+    margin: 0 auto;
+}
+section#content .img-detail img{
+    width: 100%;
+
+}
+
+section#content ul.relate{
+    padding: 0;
+    margin: 0;
+}
+section ul.relate li{
+    float: left;
+    padding: 2px;
+    list-style: none;
+}
+section#content ul.relate li a{
+    background: #FA5480;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Battambang;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 8px;
+}
+section#content .share {
+    width: 100%;
+    float: left;
+    background: #F6F6F6;
+    margin: 30px 0;
+    border-radius: 3px;
+
+}
+section#content .share span{
+    padding: 10px 15px;
+    color: #000;
+    font-family: Battambang;
+    font-size: 16px;
+    display: inline-block;
+}
+section#content .icon{
+    margin-left: 10px;
+}
+section#content .icon span{
+    background: #4390F8;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+
+}
